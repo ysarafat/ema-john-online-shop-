@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
+import Product from './components/Products/Product'
 
 function App() {
   const [products, setProducts] = useState([])
@@ -15,6 +16,7 @@ console.log(products);
   return (
     <>
     <Navbar />
+    <div className='product-container'>{products.map(product => <Product product={product} key={product.id}/>)}</div>
     </>
   )
 }
