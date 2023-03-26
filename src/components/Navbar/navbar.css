@@ -1,0 +1,25 @@
+.nav-container{
+    width: full;
+    height: 80px;
+    background-color: #1C2B35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.nav-container ul{
+    display: flex;
+    gap: 16px;
+}
+.nav-container ul li {
+    list-style: none;
+}
+.nav-container ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #FFFFFF;  
+}
+.nav-container ul li a:hover{
+    color: #ff9900;
+    transition: 5ms;
+}
