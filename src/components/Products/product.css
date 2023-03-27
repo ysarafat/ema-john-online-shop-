@@ -1,9 +1,11 @@
+
 .product-cards{
     width: 300px;
     height: 580px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
     position: relative;
+    margin: 50px;
 
 }
 .product-cards img{
