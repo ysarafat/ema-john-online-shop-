@@ -43,6 +43,7 @@ margin: 11px 0;
     height: 48px;
     font-weight: 400;
     font-size: 15px;
+    border-top: 1px solid #95A0A7;
 }
 .product__cart_btn:hover{
     background-color: #ff9900;
