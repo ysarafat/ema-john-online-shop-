@@ -17,7 +17,7 @@ const cartHendelar =(product) => {
     const newCart = [...cart,product]
     setCart(newCart) 
 }
-console.log(cart);
+
     return (
         <div className='shop__container'>
             <div className='product-container'>
