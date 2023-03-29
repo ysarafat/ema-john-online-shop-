@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Product from '../Products/Product'
 import "./shop.css"
 import Cart from '../Cart/Cart';
-import { addToDb, getShoppingCart } from '../../utilities/fakeDB';
+import { addToDb, getShoppingCart } from '../../utilities/localStorage';
 
 const Shop = () => {
     const [products, setProducts] = useState([])
