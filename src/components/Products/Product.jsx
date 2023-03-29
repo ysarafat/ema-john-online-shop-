@@ -1,5 +1,6 @@
 import React from 'react';
-import {BsFillCartCheckFill} from 'react-icons/bs';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import './product.css';
 
 const Product = (props) => {
@@ -11,7 +12,7 @@ const Product = (props) => {
             <p className='product__price'>Price : ${price}</p>
             <p className='product__seller'>Seller : {seller}</p>
             <p className='product__seller'>Rating : {ratings}</p>
-            <button className='product__cart_btn'>Add to Cart <BsFillCartCheckFill /> </button>
+            <button className='product__cart_btn'>Add to Cart <FontAwesomeIcon icon={faCartPlus}/> </button>
         </div>
         
         

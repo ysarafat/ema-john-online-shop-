@@ -5,8 +5,8 @@
    
   }
 .shop__container{
-    display: flex;
-    grid-template-columns: 5fr, 1fr;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 .shop__container__right{
     position: sticky;
@@ -27,4 +27,31 @@
 }
 .shop__container__right__gtotal{
     font-size: 21px;
+}
+.btn__div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.clear__cart__btn{
+    width: 232px;
+    height: 48px;
+    background: #FF3030;
+    border-radius: 4px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+.order__review__btn{
+    width: 232px;
+    height: 48px;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
 }

@@ -1,6 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Product from '../Products/Product'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faArrowRight, faTrash } from '@fortawesome/free-solid-svg-icons'
 import "./shop.css"
 const Shop = () => {
     const [products, setProducts] = useState([])
@@ -9,7 +12,6 @@ const Shop = () => {
     .then(res => res.json())
     .then(data => setProducts(data))
 }, [])
-console.log(products);
     return (
         <div className='shop__container'>
             <div className='product-container'>
@@ -22,6 +24,10 @@ console.log(products);
             <p>Total Shipping Charge:</p>
             <p>Tax:</p>
             <p className='shop__container__right__gtotal'>Grand Total:</p>
+            <div className='btn__div'>
+                <button className='clear__cart__btn'>Clear Cart  <FontAwesomeIcon icon={faTrash} /></button>
+                <button className='order__review__btn'>Review Order  <FontAwesomeIcon icon={faArrowRight} />  </button>
+            </div>
 
         </div>
         </div>
