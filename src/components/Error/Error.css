@@ -3,4 +3,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-image: url('../../assets/images/errorpage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.back_home{
+    background-color: #FF9900;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.back_home:hover{
+    background-color: #FF3030;
+    transition: 200ms;
+    color: white;
 }
