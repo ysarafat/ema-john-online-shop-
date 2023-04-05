@@ -20,7 +20,7 @@ const Cart = ({ cart }) => {
       <h1 className="shop__container__right__title">Order Summary</h1>
       <p>Selected Items: {quantity} </p>
       <p>Total Price: ${total} </p>
-      <p>Total Shipping Charge: {total < 500 ? "$" + shipping : "Free"} </p>
+      <p>Total Shipping Charge: ${shipping} </p>
       <p>Tax: ${tax.toFixed(2)} </p>
       <p className="shop__container__right__gtotal">
         Grand Total: ${grandTotal} (Including 10% VAT)
