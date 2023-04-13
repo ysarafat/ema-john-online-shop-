@@ -1,8 +1,3 @@
-// const cartProductsLodar = () => {
-
-// }
-// export default cartProductsLodar;
-
 import { getShoppingCart } from "../utilities/localStorage";
 
 const cartProductsLoader = async () => {
